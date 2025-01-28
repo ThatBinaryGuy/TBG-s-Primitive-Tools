@@ -1,0 +1,56 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+
+    background-color: #212121;
+    color: #dedede;
+
+    margin: 2em;
+}
+
+#rickroll {
+    width: 80px;
+}
+
+button {
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    background-color: inherit;
+    color: inherit;
+    &:hover {
+        background-color: #dedede;
+        color: #212121;
+        cursor: pointer;
+    }
+}
+
+a {
+    color: inherit;
+}
+
+.home-button {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+}
+
+.calculator-button {
+    width: 100px;
+    height: 100px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    border-radius: 100px;
+}
+
+#calc-body {
+    margin: 0;
+    padding: 0;
+    line-height: 10vh;
+}
