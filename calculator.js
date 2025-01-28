@@ -20,10 +20,14 @@ const anse = document.getElementById("ANS");
 const pie = document.getElementById("PI");
 const lb = document.getElementById("(");
 const rb = document.getElementById(")");
+const mod = document.getElementById("MOD");
+const ee = document.getElementById("e");
+
 const eqe = document.getElementById("eq");
 const ree = document.getElementById("re");
 
 let pi = 3.1415926535;
+let e = 2.7182818284;
 let eq = "";
 eq = String(eq);
 let eqf = "n";
@@ -95,6 +99,12 @@ function press(n){
     if (n == "PI"){
         eq += pi;
     }
+    if (n == "%"){
+        eq += "%";
+    }
+    if (n == "e"){
+        eq += e;
+    }
     eqe.textContent = eq;
     if (n == "="){
         ree.textContent = eval(eq);
@@ -127,3 +137,5 @@ anse.onclick = function(){press("ANS")}
 lb.onclick = function(){press("(")}
 rb.onclick = function(){press(")")}
 pie.onclick = function(){press("PI")}
+mod.onclick = function(){press("%")}
+ee.onclick = function(){press("e")}
