@@ -7,11 +7,17 @@ body {
     color: #dedede;
 
     margin: 2em;
+
+    width: 800px;
+    height: auto;
+
+    overflow: hidden;
 }
 
-#rickroll {
-    width: 80px;
-}
+
+body::-webkit-scrollbar {
+    display: none;
+} 
 
 button {
     border-radius: 10px;
@@ -56,5 +62,5 @@ a {
 }
 
 .gb {
-    width: 50px;
+    min-width: 50px;
 }

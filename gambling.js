@@ -2,8 +2,11 @@ const spinner = document.getElementById("spinner");
 const i = document.getElementById("i");
 const ii = document.getElementById("ii");
 const iii = document.getElementById("iii");
+const iv = document.getElementById("iv");
 const up = document.getElementById("up");
 const down = document.getElementById("down");
+const upTen = document.getElementById("u10");
+const downTen = document.getElementById("d10");
 const betting = document.getElementById("betting");
 const networth = document.getElementById("networth");
 
@@ -47,6 +50,16 @@ up.onclick = function(){
 
 down.onclick = function(){
     bet--;
+    updateBetting();
+}
+
+upTen.onclick = function(){
+    bet += 10;
+    updateBetting();
+}
+
+downTen.onclick = function(){
+    bet -= 10;
     updateBetting();
 }
 

@@ -1,0 +1,9 @@
+{
+    "name": "TBG's Primitive Tools",
+    "description": "Tools Developed by an Inexperienced Programmer",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "index.html"
+    }
+  }
